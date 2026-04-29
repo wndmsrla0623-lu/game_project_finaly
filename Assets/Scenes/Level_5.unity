@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal
       objectReference: {fileID: 0}
+    - target: {fileID: 5251389055079302396, guid: f8e211efc88c5bf42a6d094ac78c7cbc, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     - target: {fileID: 5838362589457215151, guid: f8e211efc88c5bf42a6d094ac78c7cbc, type: 3}
       propertyPath: m_Sprite
       value: 

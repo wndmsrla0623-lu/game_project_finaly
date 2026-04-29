@@ -19,10 +19,13 @@ public class PlayerController : MonoBehaviour
     private bool isSpeedUp = false;
     private bool isJumpUp = false;
 
+    float score;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         pAni = GetComponent<Animator>();
+        score = 0f;
     }
 
     private void Update()
@@ -72,6 +75,8 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Finish"))
         {
+            HighScore.TrySet(SceneManager.GetActiveScene().buildIndex, (int)score);
+
             collision.GetComponent<LevelObject>().MoveToNextLevel();
         }
 
@@ -91,9 +96,15 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Item"))
         {
+            score += 10f;
+        }
+
+        if (collision.CompareTag("Item"))
+        {
             isGiant = true;
             Invoke(nameof(ResetGiant), 3f);
             Destroy(collision.gameObject);
+            score += 10f;
         }
 
         if (collision.CompareTag("InvincibleItem"))
