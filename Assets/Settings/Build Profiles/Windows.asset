@@ -18,8 +18,26 @@ MonoBehaviour:
   m_PlatformId: 4e3c793746204150860bf175a9a41a05
   m_PlatformBuildProfile:
     rid: 8270924931748855808
-  m_OverrideGlobalSceneList: 0
-  m_Scenes: []
+  m_OverrideGlobalSceneList: 1
+  m_Scenes:
+  - m_enabled: 1
+    m_path: Assets/Scenes/main.unity
+    m_guid: 69bb1742accf6bb439353f302e6b230c
+  - m_enabled: 1
+    m_path: Assets/Scenes/Level_1.unity
+    m_guid: 8c9cfa26abfee488c85f1582747f6a02
+  - m_enabled: 1
+    m_path: Assets/Scenes/Level_2.unity
+    m_guid: b4acb439a634ae341a9b21a6f89b0428
+  - m_enabled: 1
+    m_path: Assets/Scenes/Level_3.unity
+    m_guid: 6cb0d3aa0c5d806409e4c2c44a9772b7
+  - m_enabled: 1
+    m_path: Assets/Scenes/Level_4.unity
+    m_guid: 90501b249e45a8b4f987e5dd7a3fbb2b
+  - m_enabled: 1
+    m_path: Assets/Scenes/Level_5.unity
+    m_guid: f8034f61ebf6a7b489b5e8a968282391
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
@@ -50,3 +68,23 @@ MonoBehaviour:
         m_CopyPDBFiles: 0
         m_WindowsDevicePortalAddress: 
         m_WindowsDevicePortalUsername: 
+--- !u!114 &5267128575044067470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 15012, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: BuildAutomationSettings
+  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.Build.Profile.BuildAutomationSettings
+  m_OperatingSystemValue: 
+  m_OperatingSystemFamily: 
+  m_XcodeVersion: 
+  m_AndroidSdkVersion: 
+  m_UnityArchitecture: 
+  m_MachineTypeId: 
+  m_CredentialsId: 
+  m_BuildTarget: 19
