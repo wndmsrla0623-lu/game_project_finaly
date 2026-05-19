@@ -16,10 +16,10 @@ public class RankPage : MonoBehaviour
     void Awake()
     {
         allData = StageResultSaver.LoadRank();
-        RefreshRankList();
+        RefreshRankList(1);
     }
 
-    void RefreshRankList()
+   public void RefreshRankList(int stageIndex)
     {
         
         foreach (Transform child in contentRoot)
@@ -28,7 +28,7 @@ public class RankPage : MonoBehaviour
         }
 
 
-        var sortedData = allData.results.Where(r => r.stage == 1).OrderByDescending(x => x.score).ToList();
+        var sortedData = allData.results.Where(r => r.stage == stageIndex).OrderByDescending(x => x.score).ToList();
 
         for (int i = 0; i < sortedData.Count; i++)
         {

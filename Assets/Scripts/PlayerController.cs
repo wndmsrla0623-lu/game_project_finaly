@@ -95,6 +95,17 @@ public class PlayerController : MonoBehaviour
            
         }
 
+        ItemObject item = collision.GetComponent<ItemObject>();
+
+        if (item != null)
+        {
+            isGiant = true;
+            int itemPoint = item.GetPoint();
+            StageResultSaver.SaveStage(1, Mathf.RoundToInt(score));
+            Debug.Log($"아이템 먹음! JSON에 {score}점 저장 완료!");
+            Destroy(collision.gameObject);
+        }
+
         if (collision.CompareTag("Item"))
         {
             score += 10f;

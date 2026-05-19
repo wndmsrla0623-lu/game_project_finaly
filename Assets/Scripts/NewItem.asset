@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3956c7993cfda554491f4ba58e661560, type: 3}
   m_Name: NewItem
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  point: 10
+  point: 30
